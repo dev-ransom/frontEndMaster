@@ -25,8 +25,7 @@
 }
 
 body{
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQYV2NkQAOMUH4DAwMDCDPABODqMAQAKe4BBZTlhh0AAAAASUVORK5CYII=);
-    background-image: linear-gradient(to left bottom, #3f3f3f, lightpink, #3f3f3f);
+    background-image: linear-gradient(to left bottom, rgb(9,9,8), rgb(34,34,34), rgb(9,9,8));
     height: 100vh;
 }
 
@@ -109,24 +108,30 @@ nav ul li a:hover{
 }
 
 .content_page{
+    background-image: url(./Images/bg_hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size:  100%;
     color: rgb(230,230,230); 
     text-align: center;
-    background: #a29f9e;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10% 0;
-    
+    height: 85%;
 }
 
 .content_page h1{
     font-size: 59px;
     font-weight: 500;
     line-height: 69px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, .5);
 }
 
 .content_page h2{
     font-size: 30px;
     font-weight: 700;
     line-height: 45px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, .5);
 }
 
 .btn_div{
@@ -161,4 +166,199 @@ nav ul li a:hover{
 
 .orange:hover{
     background: rgba(201,80,24);
+}
+
+/* skills */
+.skills{
+    background-color: rgb(15,15,15);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.zoom-out:hover{
+    animation-name: zoom;
+    animation-duration: 1.5s;
+}
+
+@keyframes zoom{
+    25%{
+        transform: scale(1.5);
+    }
+}
+
+/* description */
+.description{
+    background: rgb(8,64,120);
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.desTitle{
+    color: #fcfcfcf3;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.desTitle a{
+    text-decoration: underline;
+}
+
+.desTitle a:hover{
+    transition: 0.5s;
+    color: #fcfcfcc2;
+}
+
+.card_container{
+    width: 100%;
+    padding: 0 80px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.card{
+    padding: 30px 10px;
+    box-shadow: rgba(17, 12, 46, 0.15)5px 48px 100px 0px;
+    border-radius: 10px;
+    background: white;
+    text-align: left;
+    line-height: 30px;
+}
+
+.card div p{
+    margin-bottom: 5px;
+}
+
+/* storyline */
+.storyline_black{
+    background: rgb(34,34,34);
+    height: 280px;
+    text-align: center;
+    padding: 40px;
+}
+
+.storyline_black h1{
+    font-family: sans-serif;
+    color: #fcfcfcf3;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.storyline_black p{
+    color: #fcfcfcf3;
+    margin-top: 22px;
+    line-height: 25px;
+    font-family: sans-serif;
+}
+
+
+.btn3{
+    background: rgb(201,80,24, 0.911);
+    padding: 10px 30px;
+    color: #fcfcfcf3;
+    border-radius: 35px;
+    width: 30%;
+    font-size: 19px;
+    font-family: serif;
+    margin-top: 30px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn3:hover{
+    background: rgb(201,80,24);
+    transition: all 0.5s ease;
+}
+
+/* viewers page */
+.love-page{
+    background-image: url(./Images/love.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: 100%;
+    color: rgb(230,230,230); 
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10% 0;
+    height: 80%; 
+}
+
+.love-page h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fcfcfcf3;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, .5);
+}
+
+.bn4{
+    border: none;
+    outline: none;
+    width: 25%;
+    background-color: rgba(192, 45, 40);
+    padding: 20px 22px;
+    border-radius: 43px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fcfcfcf3;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+.bn4:hover{
+    background: rgba(192, 45, 40, 0.911);
+    transition: 0.5s;
+}
+
+/* boot camp */
+.boot-page{
+    background-image: url(./Images/boot.png);
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+    text-align: center;
+}
+
+.boot{
+    width: 250px;
+    margin-top: 35px;
+}
+
+.text{
+    color: #fcfcfcf3;
+    line-height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.more{
+    margin-top: 20px;
+}
+
+.more a{
+    color: rgb(221,98,94);
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
 }
